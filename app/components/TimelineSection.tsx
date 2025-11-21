@@ -74,7 +74,8 @@ export default function TimelineSection({ scrollY }: TimelineSectionProps) {
             desc="Started by solving campus problems with integrated student-focused solutions." 
             list={["GatorEx (Marketplace)", "Rydify (Transportation)", "Vybr (Roommate Matching)"]}
             buttonText="EXPLORE KAMPUS"
-            color="#00F0FF" 
+            color="#00F0FF"
+            url="https://kampus.fun/"
           />
 
           {/* Level 2: Startup Builder */}
@@ -87,7 +88,8 @@ export default function TimelineSection({ scrollY }: TimelineSectionProps) {
             desc="Evolved into building scalable tools that help startups grow and thrive." 
             list={["FormEase (Forms)", "QRBee (Analytics)", "HackHire (Assessments)"]}
             buttonText="EXPLORE MARKIT"
-            color="#FF0055" 
+            color="#FF0055"
+            url="https://markit.one/"
           />
 
           {/* Level 3: PaaS Architect */}
@@ -100,7 +102,8 @@ export default function TimelineSection({ scrollY }: TimelineSectionProps) {
             desc="Now building platform infrastructure — enabling others to build on top of my tools." 
             list={["Logora (Branding)", "Deckr (Presentation)", "Buidl (Prototyping)"]}
             buttonText="EXPLORE LAYR"
-            color="#00F0FF" 
+            color="#00F0FF"
+            url="http://layr.plus/"
           />
         </div>
       </div>
@@ -118,9 +121,10 @@ interface TimelineEventProps {
   buttonText: string
   color: string
   icon: React.ReactElement<{ size?: number }>
+  url: string
 }
 
-const TimelineEvent = ({ side, year, level, title, desc, list, buttonText, color, icon }: TimelineEventProps) => {
+const TimelineEvent = ({ side, year, level, title, desc, list, buttonText, color, icon, url }: TimelineEventProps) => {
   const isLeft = side === 'left'
 
   return (
@@ -169,9 +173,14 @@ const TimelineEvent = ({ side, year, level, title, desc, list, buttonText, color
             </ul>
           </div>
 
-          <button className="w-full py-2 font-bold font-mono text-sm bg-transparent border-2 border-white hover:bg-white hover:text-black transition-colors flex justify-center items-center gap-2 group/btn">
+          <a 
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full py-2 font-bold font-mono text-sm bg-transparent border-2 border-white hover:bg-white hover:text-black transition-colors flex justify-center items-center gap-2 group/btn"
+          >
             {buttonText} <ArrowRight size={14} className="transform group-hover/btn:translate-x-1 transition-transform" />
-          </button>
+          </a>
         </div>
       </div>
 
