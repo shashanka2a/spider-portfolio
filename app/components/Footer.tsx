@@ -16,11 +16,18 @@ export default function Footer() {
           <span className="text-[#00F0FF]">ASSEMBLE</span>
         </h2>
 
-        <p className="font-mono text-gray-400 mb-10 text-lg">Time to build something amazing.</p>
+        <p className="font-mono text-gray-400 mb-10 text-lg">
+          <a 
+            href="mailto:jagannathamshashank@gmail.com?subject=Let's Create & Collaborate"
+            className="hover:text-[#00F0FF] transition-colors cursor-pointer"
+          >
+            Time to build something amazing.
+          </a>
+        </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <SocialButton icon={<Github />} label="GITHUB" color="#fff" />
-          <SocialButton icon={<Linkedin />} label="LINKEDIN" color="#0077B5" />
-          <SocialButton icon={<Mail />} label="EMAIL" color="#FF0055" />
+          <SocialButton icon={<Github />} label="GITHUB" color="#fff" url="https://github.com/shashanka2a" />
+          <SocialButton icon={<Linkedin />} label="LINKEDIN" color="#0077B5" url="https://www.linkedin.com/in/shashank-jagannatham/" />
+          <SocialButton icon={<Mail />} label="EMAIL" color="#FF0055" url="mailto:jagannathamshashank@gmail.com" />
         </div>
 
         <div className="mt-16 text-gray-600 font-mono text-xs">
@@ -36,14 +43,20 @@ interface SocialButtonProps {
   icon: React.ReactElement<{ size?: number }>
   label: string
   color: string
+  url: string
 }
 
-const SocialButton = ({ icon, label, color }: SocialButtonProps) => (
-  <button className="btn-liquid group relative px-6 py-3 bg-transparent overflow-hidden rounded-full border border-gray-700 hover:border-white transition-colors">
+const SocialButton = ({ icon, label, color, url }: SocialButtonProps) => (
+  <a 
+    href={url}
+    target={url.startsWith('mailto:') ? undefined : '_blank'}
+    rel={url.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
+    className="btn-liquid group relative px-6 py-3 bg-transparent overflow-hidden rounded-full border border-gray-700 hover:border-white transition-colors"
+  >
     <div className="relative flex items-center gap-2 font-mono text-sm font-bold z-10">
       {React.cloneElement(icon, { size: 18 })}
       <span>{label}</span>
     </div>
-  </button>
+  </a>
 )
 
