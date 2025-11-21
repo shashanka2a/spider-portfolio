@@ -1,0 +1,28 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Legs - Left -->
+  <path d="M45 50 L30 30 L10 40" stroke="#00F0FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M45 55 L25 50 L5 60" stroke="#00F0FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M45 60 L25 70 L10 85" stroke="#00F0FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M45 45 L30 20 L15 10" stroke="#00F0FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Legs - Right -->
+  <path d="M55 50 L70 30 L90 40" stroke="#00F0FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M55 55 L75 50 L95 60" stroke="#00F0FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M55 60 L75 70 L90 85" stroke="#00F0FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M55 45 L70 20 L85 10" stroke="#00F0FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Body - Abdomen -->
+  <path d="M50 35 L65 50 L50 80 L35 50 Z" fill="#0D0015" stroke="#FF0055" stroke-width="2" />
+  
+  <!-- Body - Thorax/Head -->
+  <path d="M50 50 L60 40 L50 30 L40 40 Z" fill="#00F0FF" />
+  
+  <!-- Eyes -->
+  <circle cx="45" cy="38" r="2" fill="#FF0055" />
+  <circle cx="55" cy="38" r="2" fill="#FF0055" />
+  
+  <!-- Tech Lines on Body -->
+  <path d="M50 55 L50 70" stroke="#FF0055" stroke-width="1" />
+  <path d="M40 50 L60 50" stroke="#FF0055" stroke-width="1" opacity="0.5" />
+</svg>
+

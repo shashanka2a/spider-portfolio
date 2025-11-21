@@ -19,6 +19,9 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: 'Shashank Jagannatham - Web-Slinger Developer',
   description: 'AIML engineer & product builder. From hackathons to startups, building products that really mean something.',
+  icons: {
+    icon: '/icon.svg',
+  },
 }
 
 export default function RootLayout({
