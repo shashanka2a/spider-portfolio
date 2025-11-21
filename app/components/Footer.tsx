@@ -33,7 +33,7 @@ export default function Footer() {
 }
 
 interface SocialButtonProps {
-  icon: React.ReactElement
+  icon: React.ReactElement<{ size?: number }>
   label: string
   color: string
 }

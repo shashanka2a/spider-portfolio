@@ -117,7 +117,7 @@ interface TimelineEventProps {
   list: string[]
   buttonText: string
   color: string
-  icon: React.ReactElement
+  icon: React.ReactElement<{ size?: number }>
 }
 
 const TimelineEvent = ({ side, year, level, title, desc, list, buttonText, color, icon }: TimelineEventProps) => {
