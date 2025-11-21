@@ -80,8 +80,12 @@ export default function SpiderMascot({ scrollY, windowHeight }: SpiderMascotProp
       {/* Web Thread (Only visible in Hero/Hanging modes) */}
       {scrollY < windowHeight && (
         <div 
-          className="absolute bottom-1/2 left-1/2 w-0.5 bg-white/30 -translate-x-1/2 origin-bottom"
-          style={{ height: '100vh', transform: `translateY(-50%) rotate(0deg)` }} 
+          className="absolute left-1/2 w-0.5 bg-white/30 origin-top"
+          style={{ 
+            top: '50%',
+            height: '100vh',
+            transform: 'translateX(-50%)'
+          }} 
         />
       )}
 
