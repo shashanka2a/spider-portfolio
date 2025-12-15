@@ -131,7 +131,12 @@ const TimelineEvent = ({ side, year, level, title, desc, list, buttonText, color
     <div className={`timeline-card opacity-0 translate-y-10 transition-all duration-700 ease-out flex flex-col md:flex-row items-center w-full ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
       {/* Content Box */}
       <div className={`w-full md:w-1/2 ${isLeft ? 'md:pr-16 pl-12' : 'md:pl-16 pl-12'} relative mb-8 md:mb-0`}>
-        <div className="group relative bg-[#1A1A1A] border-2 border-white p-6 transition-transform duration-300 hover:-translate-y-1">
+        <a 
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block group relative bg-[#1A1A1A] border-2 border-white p-6 transition-transform duration-300 hover:-translate-y-1 cursor-pointer"
+        >
           {/* Neon Border Effect */}
           <div 
             className="absolute inset-0 border-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" 
@@ -139,7 +144,7 @@ const TimelineEvent = ({ side, year, level, title, desc, list, buttonText, color
           ></div>
 
           {/* Floating Badge */}
-          <div className="absolute -top-4 right-4 flex gap-2">
+          <div className="absolute -top-4 right-4 flex gap-2 z-10">
             <div className="bg-[#FF0055] text-white font-comic px-2 py-1 border-2 border-black transform rotate-3">
               {level}
             </div>
@@ -173,15 +178,10 @@ const TimelineEvent = ({ side, year, level, title, desc, list, buttonText, color
             </ul>
           </div>
 
-          <a 
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full py-2 font-bold font-mono text-sm bg-transparent border-2 border-white hover:bg-white hover:text-black transition-colors flex justify-center items-center gap-2 group/btn"
-          >
+          <div className="w-full py-2 font-bold font-mono text-sm bg-transparent border-2 border-white group-hover:bg-white group-hover:text-black transition-colors flex justify-center items-center gap-2 group/btn">
             {buttonText} <ArrowRight size={14} className="transform group-hover/btn:translate-x-1 transition-transform" />
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
 
       {/* Node on the Line */}
