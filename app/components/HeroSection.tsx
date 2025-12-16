@@ -48,7 +48,7 @@ export default function HeroSection({ mousePosition }: HeroSectionProps) {
         className="relative z-20 text-center mb-4"
         style={{ transform: `translate(${titleX}px, ${titleY}px)` }}
       >
-        <h1 className="font-comic text-6xl md:text-8xl lg:text-9xl uppercase leading-[0.85] tracking-tighter relative inline-block skew-x-[-2deg]">
+        <h1 className="font-comic text-6xl md:text-8xl lg:text-8xl uppercase leading-[0.85] tracking-tighter relative inline-block skew-x-[-2deg]">
           <span className="block text-white relative z-10 drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">
             Shashank
           </span>
@@ -60,7 +60,7 @@ export default function HeroSection({ mousePosition }: HeroSectionProps) {
           </span>
         </h1>
 
-        <h1 className="font-comic text-6xl md:text-8xl lg:text-9xl uppercase leading-[0.85] tracking-tighter mt-2 relative inline-block skew-x-[-2deg]">
+        <h1 className="font-comic text-6xl md:text-8xl lg:text-8xl uppercase leading-[0.85] tracking-tighter mt-4 md:mt-6 relative inline-block skew-x-[-2deg]">
           <div className="glitch-wrapper">
             <span className="relative z-10" data-text="JAGANNATHAM">JAGANNATHAM</span>
             <span className="glitch-layer" aria-hidden="true">JAGANNATHAM</span>

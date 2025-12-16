@@ -86,7 +86,7 @@ export default function TimelineSection({ scrollY }: TimelineSectionProps) {
             title="MARKIT" 
             icon={<ShoppingBag />}
             desc="Evolved into building scalable tools that help startups grow and thrive." 
-            list={["FormEase (Forms)", "QRBee (Analytics)", "HackHire (Assessments)"]}
+            list={["FormEase (Forms)", "QRBee (Analytics)", "Adverse (Content)"]}
             buttonText="EXPLORE MARKIT"
             color="#FF0055"
             url="https://markit.one/"

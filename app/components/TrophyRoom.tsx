@@ -8,8 +8,7 @@ import { Rocket, Mic, Gavel, Award } from 'lucide-react'
  */
 export default function TrophyRoom() {
   return (
-    <section className="py-24 px-4 relative bg-black/30">
-      <div className="absolute inset-0 bg-mesh z-0"></div>
+    <section className="py-24 px-4 relative overflow-hidden">
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Title */}
         <div className="mb-16 text-center">
